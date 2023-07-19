@@ -3,20 +3,27 @@ import Users from './pages/users/Users.jsx';
 import Products from './pages/products/Products.jsx';
 import Navbar from './components/navbars/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
+import Menu from "./components/menu/Menu.jsx"
 
 // import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+  Outlet
 } from "react-router-dom";
 
 const Layout = () =>{
   return (
     <div className="main">
       <Navbar />
+        <div className="container">
+        <div className="menuContainer">
+          <Menu />
+        </div>
+        <div className="contentContainer">
 
+        </div>
+        </div>
       <Footer />
     </div>
   )
